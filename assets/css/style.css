@@ -1,0 +1,227 @@
+/*
+Font: Work Sans, Didact Gothic, Fjalla One
+Farben: #9e9e9e, #fff, #000, #333, #666
+font-family: 'Didact Gothic', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fjalla+One&family=Work+Sans:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{text-decoration: none;}
+
+h1,h3{
+    font-family: 'Didact Gothic', sans-serif;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}
+h1{
+    font-size: 5rem;
+    padding: 4% 25%;
+}
+h2{
+    font-size:7rem;
+    padding: 8% 5%;
+    margin-bottom: 5%;
+}
+h3{
+    color: #fff;
+    font-size: 6rem;
+    padding: 2% 0;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+h4{
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 180px;
+    font-weight: 400;
+    letter-spacing: -0.1em;
+    text-align: center;
+    padding: 7% 0;
+}
+header{
+    /* height: 80vh; */
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+header p{
+    padding: 3%;
+    font-size: 1.3rem;
+}
+header section{
+    width: 70%;
+    margin: 0 auto;
+}
+header section article{
+    height: 100vh;
+    margin: 0 auto;
+    background: url(../img/portfolio1.jpeg) no-repeat center/contain;
+}
+/* ++++ main sections +++++*/
+main section:nth-of-type(odd){
+    height: 90vh;
+}
+main section:nth-of-type(1){
+    /*linear-gradient(direction, color-stop1, color-stop2,...*/
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(3, 3, 3, 0.5) ),
+    url(../img/portfolio2.jpg) no-repeat center/cover;
+}
+main section:nth-of-type(3){
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(3, 3, 3, 0.5) ),
+    url(../img/portfolio4.jpg) no-repeat center/cover;
+}
+main p{
+    font-size: 1.3rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+main p:nth-of-type(2){
+    margin:2.5% 0 10%;
+}
+main section:nth-of-type(odd) p{color: #9e9e9e;}
+main section:nth-of-type(even) p{color: #666;}
+main section article{
+        width: 80%;
+        margin: 0 auto;
+        padding: 5%;
+        padding-top: 8%;
+        position: relative;
+}
+main section article a{
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 15px 25px;
+}
+main section:nth-of-type(odd) article a{border: 2px solid #9e9e9e;color: #fff;}
+
+/*++++ the hover effect ++++++ */
+main section article a::after{
+    left: 90%;
+    top: 85%;
+    font-size: 9.3rem;
+}
+main section:nth-of-type(odd) article a::after{
+    content: '01';
+    position: absolute;
+    opacity: .2;
+    color: #9e9e9e;
+}
+main section:nth-of-type(3) article a::after{content: '03';}
+main section:nth-of-type(odd) article a:hover{background-color: #fff; color: #000;}
+main section:nth-of-type(odd) article a:hover::after{opacity: 1;color: #fff;}
+/*++++ ++++++ ++++++ */
+main section:nth-of-type(even){
+    height: 100vh;
+    background:
+    url(../img/portfolio3.png) no-repeat center/cover;
+    padding-top: 5%;
+}
+main section:nth-of-type(4){
+    background:
+    url(../img/portfolio5.png) no-repeat center/cover;
+}
+main section:nth-of-type(even) h3{color: #000;}
+main section:nth-of-type(even) p{color: #666;}
+main section:nth-of-type(even) article a{
+    border: 2px solid #000;
+    color: #000;
+    background-color: transparent;
+}
+main section:nth-of-type(even) article a::after{
+    content: '02';
+    position: absolute;
+    background-color: transparent;
+    opacity: .5;
+    color: #000;
+}
+main section:nth-of-type(4) article a::after{content: '04';}
+main section:nth-of-type(even) article a:hover
+{
+    background-color: #000;
+    color: #fff;
+    
+}
+main section:nth-of-type(even) article a:hover::after{opacity: 1;}
+
+/* ++++++ footer ++++++++ */
+footer section{
+    background-color: #000;
+    height: 90vh;
+    position: relative;
+}
+footer section article{
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 47%;
+}
+footer p{
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-bottom: 8%;
+}
+footer a{
+color: #fff;
+font-size: 3rem;
+}
+footer a:hover{text-decoration: underline;}
+footer section:nth-of-type(2){
+    background-color: #fff;
+    height: 100vh;
+}
+footer nav{
+    width: 80%;
+    margin: 5% auto;
+}
+footer nav ul{
+    list-style: none;
+    text-align: center;
+}
+footer nav li{padding: 5%;}
+footer nav a{
+    color: #000;
+    font-family: Didact Gothic;
+    text-transform: capitalize;
+    font-size: 5rem;
+}
+div{
+    text-align: center;
+    padding: 5%;
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+/* ++++ heart animation using webcode.tools +++++ */
+@keyframes myAnim {
+    0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+    }
+
+    10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+    }
+    17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+    }
+
+    33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+    }
+
+    45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    }
+}
